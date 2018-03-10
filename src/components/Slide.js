@@ -3,9 +3,9 @@ import InfoList from './InfoList';
 
 const SliderInfo = () => (
   <div>
-    <button>A</button>
-    <InfoList/>
-    <button>B</button>
+    <button className="btn left"><i class="fas fa-arrow-alt-circle-left fa-2x"></i></button>
+    <center><InfoList/></center>
+    <button className="btn right"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></button>
   </div>
 )
 
