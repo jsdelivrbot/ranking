@@ -1,23 +1,13 @@
-import React from 'react'
+import React from 'react';
+import InfoList from './InfoList';
 
-const SliderInfo = () => {
-  let input
+const SliderInfo = () => (
+  <div>
+    <button>A</button>
+    <InfoList/>
+    <button>B</button>
+  </div>
+)
 
-  return (
-    <div>
-      <form>
-        <input
-          placeholder="Aprender redux"
-          ref={node => {
-            input = node
-          }}
-        />
-        <button type="submit">
-          Agregar tarea
-        </button>
-      </form>
-    </div>
-  )
-}
 
-export default SliderInfo 
+export default SliderInfo; 

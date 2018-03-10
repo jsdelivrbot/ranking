@@ -1,5 +1,5 @@
 import React from 'react'
-import Song from './Song'
+import InfoSong from './InfoSong'
 
 const songs = [
     {id: 1, name: 'BBoom BBoom', votes: '27', author: 'Momoland'},
@@ -11,10 +11,10 @@ const songs = [
 ];
 
 
-const List = () => (
+const InfoList = () => (
     <ul>
-      {songs.map(song =>
-        <Song
+      {songs.map((song) => 
+        <InfoSong
           key={song.id}
           {...song}
         />
@@ -22,4 +22,4 @@ const List = () => (
     </ul>
   )
   
-  export default List
+export default InfoList;
