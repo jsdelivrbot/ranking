@@ -1,0 +1,8 @@
+.song-container {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+

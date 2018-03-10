@@ -10,15 +10,18 @@ const songs = [
     {id: 6, name: 'Wonder', votes: '2', author: 'Hillsong'}
 ];
 
-
 const InfoList = () => (
     <ul>
-      {songs.map((song) => 
-        <InfoSong
-          key={song.id}
-          {...song}
-        />
-      )}
+      {songs.map((song, index, songs) => {
+        let playList;
+        if(index === 0) {
+             playList= <InfoSong songs={songs} key={song.id} {...song}/>
+        } else {
+             playList = '';
+        }
+        return playList;
+      }
+     )}
     </ul>
   )
   
