@@ -1,5 +1,6 @@
 import React from 'react'
 import Song from './Song'
+import '../App.css'
 
 const songs = [
     {id: 1, name: 'BBoom BBoom', votes: '27', author: 'Momoland'},

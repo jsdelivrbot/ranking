@@ -1,22 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import '../App.css';
 
 const Song = ({name}) => (
   <li
-    style={{
-      marginBottom: 5
-    }}
+    className="listStyle"
   >
-    <span style={{ width: 200, display: 'inline-grid' }}>{name}</span>
+    <h3 className="song">{name}</h3>
     <button
-      style={{ marginLeft: 10 }}
+      className="btn"
     >
-      <b>+</b>
+      <b><i class="fas fa-plus"></i></b>
     </button>
     <button
-      style={{ marginLeft: 10 }}
+      className="btn"
     >
-      <b>-</b>
+      <b><i class="fas fa-minus"></i></b>
     </button>
   </li>
 )

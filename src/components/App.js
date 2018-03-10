@@ -1,11 +1,11 @@
 import React from 'react'
-import List from './List'
+import InfoList from './List'
 import Slide from './Slide'
 
 const App = () => (
   <div>
     <Slide/>
-    <List/>
+    <InfoList/>
   </div>
 )
 
