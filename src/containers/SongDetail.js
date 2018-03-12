@@ -11,10 +11,10 @@ class ContactDetail extends Component {
 		return (
 			<div>
 				<div style={{'width': '50%', 'display': 'inline-block'}}>
-				<h1>Song: {this.props.contact.name}</h1>
+				<h1>{this.props.contact.name}</h1>
 				<span>Author: {this.props.contact.author}</span>
 				</div>
-				<img style={{'width': '40%', 'height': '40%'}}
+				<img style={{'width': '40%',  'display': 'inline-block'}}
             src={this.props.contact.img}/>
 			</div>
 		);
