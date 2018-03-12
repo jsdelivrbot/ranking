@@ -5,7 +5,7 @@ import ContactDetail from '../containers/SongDetail'
 export default class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="container col-12">
         <div>
         <ContactDetail />
           <ContactList />

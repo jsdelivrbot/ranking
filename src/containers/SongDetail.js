@@ -5,12 +5,14 @@ class ContactDetail extends Component {
 	render() {
 		if (!this.props.contact) {
 			return (
-				<div>Aquí va la canción actual</div>
+				<div>
+					<h1 style={{'text-align': 'center'}}>Elige una canción</h1>
+					</div>
 			);
 		}
 		return (
 			<div>
-				<div style={{'width': '50%', 'display': 'inline-block'}}>
+				<div style={{'width': '50%', 'display': 'inline-block', 'text-align': 'center'}}>
 				<h1>{this.props.contact.name}</h1>
 				<span>Author: {this.props.contact.author}</span>
 				</div>
