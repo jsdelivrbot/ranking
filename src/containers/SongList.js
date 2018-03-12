@@ -10,15 +10,15 @@ class ContactList extends Component {
         <li
         key={songs.id}
         onClick={() => this.props.selectContact(songs)}
-        className='list-group-item'>
+        className='list-group-item' style={{'backgroundColor': '#2E3032', 'color': 'white'}}>
+        <div style={{'display': 'flex', 'justifyContent': 'space-between'}}>
+        <h3 style={{'display':'inline-block'}}>{songs.name}</h3>
         <div>
-        <h3>{songs.name}</h3>
         <span>{songs.votes}</span>
-        <div>
-        <button className="btn">
+        <button className="btn" style={{'margin': '0 1em 0 2em', 'color': 'black'}}>
         <b>+</b>
         </button>
-        <button className="btn">
+        <button className="btn" style={{'color': 'black'}}>
           <b>-</b>
         </button>
           </div>
@@ -29,7 +29,7 @@ class ContactList extends Component {
   }
   render() {
     return (
-      <ul className = 'list-group col-sm-4'>
+      <ul className = 'list-group col-sm-4 col-md-12' style={{'margin': '2em 0 2em'}}>
         {this.renderList()}
       </ul>
     );

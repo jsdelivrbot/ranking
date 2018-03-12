@@ -5,9 +5,9 @@ import ContactDetail from '../containers/SongDetail'
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <div style={{'margin': '8em'}}>
+       <ContactDetail />
       	<ContactList />
-      	<ContactDetail />
       </div>
     );
   }
