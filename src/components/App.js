@@ -1,12 +1,14 @@
-import React from 'react'
-import InfoList from './List'
-import Slide from './Slide'
+import React, { Component } from 'react';
+import ContactList from '../containers/SongList'
+import ContactDetail from '../containers/SongDetail'
 
-const App = () => (
-  <div>
-    <Slide/>
-    <InfoList/>
-  </div>
-)
-
-export default App
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+      	<ContactList />
+      	<ContactDetail />
+      </div>
+    );
+  }
+}
