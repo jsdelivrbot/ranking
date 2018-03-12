@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import selectContact from '../actions/index'
+import upVote from '../actions/index'
+import downVote from '../actions/index'
 import {bindActionCreators} from 'redux'
 
 class ContactList extends Component {
@@ -15,10 +17,18 @@ class ContactList extends Component {
         <h3 style={{'display':'inline-block'}}>{songs.name}</h3>
         <div>
         <span>{songs.votes}</span>
-        <button className="btn" style={{'margin': '0 1em 0 2em', 'color': 'black'}}>
+        <button 
+        className="btn" 
+        style={{'margin': '0 1em 0 2em', 'color': 'black'}}
+        onClick={() => this.props.upVote(songs)}
+        >
         <b>+</b>
         </button>
-        <button className="btn" style={{'color': 'black'}}>
+        <button 
+        className="btn" 
+        style={{'color': 'black'}}
+        onClick={() => this.props.downVote(songs)}
+        >
           <b>-</b>
         </button>
           </div>
@@ -43,7 +53,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({selectContact: selectContact}, dispatch);
+  return bindActionCreators({selectContact: selectContact, upVote: upVote, downVote: downVote}, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactList)
