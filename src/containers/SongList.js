@@ -19,7 +19,7 @@ class ContactList extends Component {
         <i className="fas fa-plus"></i>
         </button>
         <button className="btn">
-          
+   
         </button>
           </div>
         </div>
@@ -29,9 +29,9 @@ class ContactList extends Component {
   }
   render() {
     return (
-      <ul className = 'list-group col-sm-4'>
+      <div className="container"><ul className = 'list-group'>
         {this.renderList()}
-      </ul>
+      </ul></div>
     );
   }
 }
