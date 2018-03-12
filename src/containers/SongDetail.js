@@ -5,7 +5,7 @@ class ContactDetail extends Component {
 	render() {
 		if (!this.props.contact) {
 			return (
-				<div>Click one of the contacts to see details.</div>
+				<div>Aquí va la canción actual</div>
 			);
 		}
 		return (

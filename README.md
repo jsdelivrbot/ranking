@@ -16,7 +16,7 @@ Ranking es una aplicación desarrollada con React, donde puedes votar por tus ca
 
 * Jessica  Manturano
 
-* Gabby Mamani
+* Gabriela Mamani Flores
 
 ## Herramientas Tecnológicas utilizadas para este proyecto
 
