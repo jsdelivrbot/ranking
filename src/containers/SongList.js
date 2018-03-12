@@ -16,10 +16,10 @@ class ContactList extends Component {
         <span>{songs.votes}</span>
         <div>
         <button className="btn">
-        <b>+</b>
+        <i className="fas fa-plus"></i>
         </button>
         <button className="btn">
-          <b>-</b>
+          
         </button>
           </div>
         </div>
